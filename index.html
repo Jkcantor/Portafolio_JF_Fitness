@@ -7,21 +7,28 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #1a1a1a; /* Fondo negro */
+            color: #fff; /* Texto blanco */
             margin: 0;
             padding: 20px;
         }
 
         header {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            background-color: #000; /* Fondo negro */
             padding: 20px;
         }
 
-        h1 {
-            color: #d4af37;
+        header img {
+            width: 100px; /* Tamaño del logo */
+            margin-right: 20px; /* Espacio entre el logo y el texto */
+        }
+
+        header h1 {
+            color: #d4af37; /* Texto dorado */
+            font-size: 36px;
+            margin: 0;
         }
 
         section {
@@ -35,11 +42,16 @@
         }
 
         .service-item {
-            background-color: #fff;
+            background-color: #333; /* Fondo gris oscuro */
+            color: #fff; /* Texto blanco */
             padding: 15px;
             border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             text-align: center;
+        }
+
+        h2 {
+            color: #d4af37; /* Dorado */
         }
 
         iframe {
@@ -48,13 +60,27 @@
             border: none;
         }
 
+        button {
+            background-color: #d4af37; /* Fondo dorado */
+            color: #fff; /* Texto blanco */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #b08a2e; /* Color dorado oscuro al pasar el cursor */
+        }
+
     </style>
 </head>
 <body>
 
     <header>
+        <img src="logo.png" alt="Logo JF Fitness">
         <h1>JF Fitness - Portafolio Empresarial</h1>
-        <img src="logo.png" alt="Logo JF Fitness" width="150">
     </header>
 
     <section>
@@ -97,7 +123,6 @@
 
     <section>
         <h2>Déjanos tu Información</h2>
-        <!-- Aquí está el formulario de Google Forms -->
         <iframe src="https://forms.gle/G87AKVVeogAkf6em9"></iframe>
     </section>
 
